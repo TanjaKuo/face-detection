@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 //import Particles from "react-particles-js";
-import Clarifai from "clarifai";
+//import Clarifai from "clarifai";
 import tachyons from "tachyons";
 import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
 import Navigation from "./components/Navigation/Navigation";
@@ -89,7 +89,7 @@ class App extends Component {
     this.setState({ input: event.target.value });
   };
 
-  //"https://boiling-plateau-94944.herokuapp.com/imageUrl"
+  //"https://floating-citadel-01605.herokuapp.com/imageUrl"
 
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
