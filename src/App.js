@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Particles from "react-particles-js";
-//import Clarifai from "clarifai";
+//import Particles from "react-particles-js";
+import Clarifai from "clarifai";
+import tachyons from "tachyons";
 import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
 import Navigation from "./components/Navigation/Navigation";
 import Signin from "./components/Signin/Signin";
@@ -15,7 +16,7 @@ import "./App.css";
   apiKey: "4d42484f7bf3436584749b19c155bc23",
 }); */
 
-const particlesOptions = {
+/* const particlesOptions = {
   particles: {
     number: {
       value: 30,
@@ -25,7 +26,7 @@ const particlesOptions = {
       },
     },
   },
-};
+}; */
 
 const initialState = {
   input: "",
@@ -88,9 +89,11 @@ class App extends Component {
     this.setState({ input: event.target.value });
   };
 
+  //"https://boiling-plateau-94944.herokuapp.com/imageUrl"
+
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
-    fetch("https://boiling-plateau-94944.herokuapp.com/imageUrl", {
+    fetch("https://floating-citadel-01605.herokuapp.com/imageUrl", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -101,7 +104,7 @@ class App extends Component {
       .then((response) => {
         console.log("hi", response);
         if (response) {
-          fetch("https://boiling-plateau-94944.herokuapp.com/image", {
+          fetch("https://floating-citadel-01605.herokuapp.com/image", {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -132,7 +135,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        <Particles className="particles" params={particlesOptions} />
+        {/* <Particles className="particles" params={particlesOptions} /> */}
         <Navigation
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}
