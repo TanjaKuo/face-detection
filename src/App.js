@@ -140,7 +140,7 @@ class App extends Component {
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}
         />
-        {route === "home" ? (
+        {route === "signin" ? (
           <div>
             <Logo />
             <Rank
@@ -153,7 +153,7 @@ class App extends Component {
             />
             <FaceRecognition box={box} imageUrl={imageUrl} />
           </div>
-        ) : route === "signin" ? (
+        ) : route === "home" ? (
           <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
         ) : (
           <Register
