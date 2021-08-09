@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-//import Particles from "react-particles-js";
+import Particles from "react-particles-js";
 //import Clarifai from "clarifai";
-import tachyons from "tachyons";
+//import tachyons from "tachyons";
 import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
 import Navigation from "./components/Navigation/Navigation";
 import Signin from "./components/Signin/Signin";
@@ -16,7 +16,7 @@ import "./App.css";
   apiKey: "4d42484f7bf3436584749b19c155bc23",
 }); */
 
-/* const particlesOptions = {
+const particlesOptions = {
   particles: {
     number: {
       value: 30,
@@ -26,7 +26,7 @@ import "./App.css";
       },
     },
   },
-}; */
+};
 
 const initialState = {
   input: "",
@@ -135,7 +135,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        {/* <Particles className="particles" params={particlesOptions} /> */}
+        <Particles className="particles" params={particlesOptions} />
         <Navigation
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}
