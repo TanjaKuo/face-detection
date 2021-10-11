@@ -1,0 +1,60 @@
+@import "../Variables/variables.scss";
+
+.image-link-form-container {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+.image-word {
+  font-size: 1.2rem;
+  font-family: $fontFamily;
+}
+.link-input-field {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+}
+
+.link-input {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border: $primaryBorder;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.link-btn {
+  display: inline-block;
+  width: 30%;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10%;
+  border: $primaryBorder;
+  font-size: 1.25rem;
+  background-color: $secondColor;
+  text-decoration: none;
+  font-family: $fontFamily;
+  cursor: pointer;
+  opacity: 0.5;
+  &:hover {
+    background-color: $primaryColor;
+    color: $secondColor;
+    opacity: 1;
+  }
+  @media screen and (max-width: 700px) {
+    margin: 1.5rem 7rem;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../Variables/variables.scss";
+
+.rank-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rank-hero {
+  color: $primaryColor;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid black;
+  border-width: 5px;
+  border-radius: 20%;
+  font-family: $fontFamily;
+  @media screen and (max-width: 700px) {
+    font-size: 1.3rem;
+    padding-top: 2rem;
+  }
+}
+
+.rank {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+}

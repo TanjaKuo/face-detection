@@ -1,0 +1,51 @@
+@import "../Variables/variables.scss";
+
+.card-container {
+  @include container;
+}
+
+.card {
+  @include single-card;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.mesure {
+  max-width: 30em;
+}
+
+.sign-in-field {
+  @include signin-register-field;
+}
+
+.sign-in-word {
+  @include word;
+}
+
+.input-field {
+  margin-top: 1rem;
+}
+
+.input-label {
+  @include input-labels;
+}
+
+.input {
+  @include inputs;
+}
+
+.sign-in {
+  @include before-btn;
+  animation: spinner4 800ms linear infinite;
+  @keyframes spinner4 {
+    to {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+}
+
+.sign-in-btn {
+  @include btn;
+}

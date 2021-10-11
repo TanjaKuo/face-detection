@@ -1,0 +1,56 @@
+@import "../Variables/variables.scss";
+
+.register-card-container {
+  @include container;
+}
+
+.register-card {
+  @include single-card;
+  padding: 5rem 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  @media screen and (max-width: 700px) {
+    padding: 3rem 3rem;
+  }
+}
+
+.mesure {
+  max-width: 30em;
+}
+
+.register-field {
+  @include signin-register-field;
+}
+
+.register-in-word {
+  @include word;
+}
+
+.register-input-field {
+  margin-top: 1rem;
+}
+
+.register-input-label {
+  @include input-labels;
+}
+
+.register-input {
+  @include inputs;
+}
+
+.register {
+  @include before-btn;
+}
+
+.register-btn {
+  @include btn;
+  padding: 2.3rem 1rem;
+  animation: spinner4 800ms linear infinite;
+  @keyframes spinner4 {
+    to {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+}
