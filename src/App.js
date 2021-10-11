@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Particles from "react-particles-js";
+//import Particles from "react-particles-js";
 //import Clarifai from "clarifai";
 //import tachyons from "tachyons";
 import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
