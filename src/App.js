@@ -10,8 +10,6 @@ import Register from "./components/Register/Register";
 import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import Rank from "./components/Rank/Rank";
 
-import "./Style/app.css";
-
 const initialState = {
   input: "",
   imageUrl: "",
@@ -72,8 +70,6 @@ class App extends Component {
   onInputChange = (event) => {
     this.setState({ input: event.target.value });
   };
-
-  //"https://floating-citadel-01605.herokuapp.com/imageUrl"
 
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
