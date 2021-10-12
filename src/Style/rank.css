@@ -17,6 +17,7 @@
   border-width: 5px;
   border-radius: 20%;
   font-family: "Festive", cursive;
+  border-bottom: none;
 }
 
 @media screen and (max-width: 700px) {

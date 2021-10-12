@@ -79,7 +79,7 @@ $fontFamily: "Festive", cursive;
   cursor: pointer;
   font-size: large;
   color: $fontColor;
-
+  height: auto;
   &:hover {
     background-color: $primaryColor;
     color: $secondColor;

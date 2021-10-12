@@ -10,7 +10,7 @@
 .card {
   margin: 1rem 3rem;
   padding: 7rem 3rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: #333333;
   border: 2px solid black;
   -webkit-backdrop-filter: blur(16px) saturate(180%);
           backdrop-filter: blur(16px) saturate(180%);
@@ -103,7 +103,7 @@
   padding: 2rem 1rem;
   cursor: pointer;
   font-size: large;
-  color: #575757;
+  color: #333333;
 }
 
 .sign-in-btn:hover {

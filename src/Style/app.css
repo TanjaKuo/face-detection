@@ -27,7 +27,7 @@
       grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
   .image-field {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
