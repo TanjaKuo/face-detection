@@ -7,8 +7,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .particles {
@@ -24,13 +24,19 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (max-width: 1200px) {
   .image-field {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 /*# sourceMappingURL=app.css.map */

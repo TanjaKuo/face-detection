@@ -143,6 +143,7 @@ class App extends Component {
             onRouteChange={this.onRouteChange}
           />
         )}
+        <p className="footer">ⓒ 2021 Made with ♡ by Tanya Kuo</p>
       </div>
     );
   }

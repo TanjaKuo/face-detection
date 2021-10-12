@@ -15,7 +15,8 @@ $fontFamily: "Festive", cursive;
 
 @mixin single-card {
   margin: 1rem 3rem;
-  padding: 7rem 3rem;
+  /*   padding: 7rem 3rem; */
+  padding: 5rem 3.3rem 4rem 3rem;
   color: $fontColor;
   border: $primaryBorder;
   backdrop-filter: blur(16px) saturate(180%);
