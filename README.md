@@ -205,6 +205,7 @@ AI Face Detection will recognition human face by loading an image. Suitable for 
 
 ![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/register.png)
 ![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/register-mobile.png)
+![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/full%20stack.png)
 
 ### Sign In - Guitar Product
 
