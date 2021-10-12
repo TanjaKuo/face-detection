@@ -214,17 +214,17 @@ Once fetch face data will return back to front end again.
 
 ## Screenshots
 
-### Register Page - Welcome to Mr. Guitar Home Page
+### Register Page
 
 ![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/register.png)
 ![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/register-mobile.png)
 
-### Sign In - Guitar Product
+### Sign In
 
 ![Sgnin](https://github.com/TanjaKuo/face-detection/blob/main/doc/sign-in.png)
 ![SIgnin](https://github.com/TanjaKuo/face-detection/blob/main/doc/sign-in%20mobile.png)
 
-### Face Detection Page - Latest Guitar World News && Guitar History
+### Face Detection Page - entry image url will detect face on the image
 
 ![Face](https://github.com/TanjaKuo/face-detection/blob/main/doc/face-detection.png)
 ![Face](https://github.com/TanjaKuo/face-detection/blob/main/doc/face-detection-mobile.png)
