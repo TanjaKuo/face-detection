@@ -164,7 +164,7 @@ AI Face Detection will recognition human face by loading an image. Suitable for 
 
 ## Tech stack
 
-# Client side
+### Client side
 
 - ReactJs
 - Sass/CSS
@@ -174,7 +174,7 @@ AI Face Detection will recognition human face by loading an image. Suitable for 
   - Mixin
 - Animations
 
-# Server side
+### Server side
 
 - NodeJs ExpressJs
 - RestfulAPI
@@ -182,7 +182,7 @@ AI Face Detection will recognition human face by loading an image. Suitable for 
 - knex (for connecting DB and server)
 - bcrypt (for hashing password)
 
-# delopment && API
+### delopment && API
 
 - Clarifai
 - client side -- netilify
