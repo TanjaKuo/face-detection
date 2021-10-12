@@ -9,6 +9,9 @@ import Register from "./components/Register/Register";
 //import Logo from "./components/Logo/Logo";
 import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import Rank from "./components/Rank/Rank";
+
+import Footer from "./components/Footer/Footer";
+
 import "./Style/app.css";
 
 const initialState = {
@@ -115,36 +118,48 @@ class App extends Component {
   render() {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
-      <div>
-        <Navigation
-          isSignedIn={isSignedIn}
-          onRouteChange={this.onRouteChange}
-        />
-        {route === "home" ? (
-          <div>
-            {/* <Logo /> */}
-            <Rank
-              name={this.state.user.name}
-              entries={this.state.user.entries}
-            />
-            <div className="image-field">
-              <ImageLinkForm
-                onInputChange={this.onInputChange}
-                onButtonSubmit={this.onButtonSubmit}
-              />
-              <FaceRecognition box={box} imageUrl={imageUrl} />
-            </div>
-          </div>
-        ) : route === "signin" ? (
-          <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
-        ) : (
-          <Register
-            loadUser={this.loadUser}
+      <React.Fragment>
+        <div>
+          <Navigation
+            isSignedIn={isSignedIn}
             onRouteChange={this.onRouteChange}
           />
-        )}
-        <p className="footer">ⓒ 2021 Made with ♡ by Tanya Kuo</p>
-      </div>
+          {route === "home" ? (
+            <React.Fragment>
+              <div>
+                {/* <Logo /> */}
+                <Rank
+                  name={this.state.user.name}
+                  entries={this.state.user.entries}
+                />
+                <div className="image-field">
+                  <ImageLinkForm
+                    onInputChange={this.onInputChange}
+                    onButtonSubmit={this.onButtonSubmit}
+                  />
+                  <FaceRecognition box={box} imageUrl={imageUrl} />
+                </div>
+              </div>
+            </React.Fragment>
+          ) : route === "signin" ? (
+            <React.Fragment>
+              <Signin
+                loadUser={this.loadUser}
+                onRouteChange={this.onRouteChange}
+              />
+              <Footer />
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              <Register
+                loadUser={this.loadUser}
+                onRouteChange={this.onRouteChange}
+              />
+              <Footer />
+            </React.Fragment>
+          )}
+        </div>
+      </React.Fragment>
     );
   }
 }

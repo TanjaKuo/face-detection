@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "../Footer/Footer";
+
 import "../../Style/imageLinkForm.css";
 
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
@@ -13,6 +15,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
           Detect
         </button>
       </div>
+      <Footer />
     </div>
   );
 };
