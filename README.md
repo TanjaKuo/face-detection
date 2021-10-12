@@ -201,26 +201,17 @@ AI Face Detection will recognition human face by loading an image. Suitable for 
 
 ## Screenshots
 
-### Sign in Page - Welcome to Mr. Guitar Home Page
+### Register Page - Welcome to Mr. Guitar Home Page
 
-![Home](https://github.com/TanjaKuo/guitar-project/blob/main/doc/home.gif)
+![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/register.png)
+![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/register-mobile.png)
 
-### Product - Guitar Product
+### Sign In - Guitar Product
 
-![Product](https://github.com/TanjaKuo/guitar-project/blob/main/doc/product.png)
-![Product](https://github.com/TanjaKuo/guitar-project/blob/main/doc/product-mobile.png)
+![Sgnin](https://github.com/TanjaKuo/face-detection/blob/main/doc/sign-in.png)
+![SIgnin](https://github.com/TanjaKuo/face-detection/blob/main/doc/sign-in%20mobile.png)
 
-### Blog - Latest Guitar World News && Guitar History
+### Face Detection Page - Latest Guitar World News && Guitar History
 
-![Blog](https://github.com/TanjaKuo/guitar-project/blob/main/doc/blog.png)
-![Blog](https://github.com/TanjaKuo/guitar-project/blob/main/doc/blog-mobile.png)
-
-### Contact - Contact Form
-
-![Contact](https://github.com/TanjaKuo/guitar-project/blob/main/doc/contact.png)
-![Contact](https://github.com/TanjaKuo/guitar-project/blob/main/doc/contact-mobile.png)
-
-### FAQ - Fraquently Asked Questions
-
-![FAQ](https://github.com/TanjaKuo/guitar-project/blob/main/doc/faq.png)
-![FAQ](https://github.com/TanjaKuo/guitar-project/blob/main/doc/faq-mobile.png)
+![Face](https://github.com/TanjaKuo/face-detection/blob/main/doc/face-detection.png)
+![Face](https://github.com/TanjaKuo/face-detection/blob/main/doc/face-detection-mobile.png)
