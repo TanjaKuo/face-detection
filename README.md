@@ -195,9 +195,22 @@ AI Face Detection will recognition human face by loading an image. Suitable for 
 - Hash user's password with bcrypt.
 - Storing password and user name with different tables, in order to reduce risk of data.
 
-## Sitemap
+## Roadmap - Front end -> Back end -> Database
 
-<img src="./doc/mr-guitar-sitemap.png" width="500">
+The route from frontend (sign in / register) to backend (server) and connect with postgreSQL and return back to frontend.
+
+![Roadmap](https://github.com/TanjaKuo/face-detection/blob/main/doc/full%20stack.png)
+
+## Guide - How to use
+
+![Roadmap](https://github.com/TanjaKuo/face-detection/blob/main/doc/face-use.png)
+
+## Connect API - Front end -> Back end -> Database
+
+The route from frontend (sign in / register) to backend (server) and connect with Clarifai Face Recognition API.
+Once fetch face data will return back to front end again.
+
+![Roadmap](https://github.com/TanjaKuo/face-detection/blob/main/doc/clarifai-api.png)
 
 ## Screenshots
 
@@ -205,7 +218,6 @@ AI Face Detection will recognition human face by loading an image. Suitable for 
 
 ![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/register.png)
 ![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/register-mobile.png)
-![Register](https://github.com/TanjaKuo/face-detection/blob/main/doc/full%20stack.png)
 
 ### Sign In - Guitar Product
 
