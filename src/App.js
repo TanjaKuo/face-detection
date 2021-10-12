@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-//import Particles from "react-particles-js";
-//import Clarifai from "clarifai";
-//import tachyons from "tachyons";
+
 import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
 import Navigation from "./components/Navigation/Navigation";
 import Signin from "./components/Signin/Signin";
 import Register from "./components/Register/Register";
-//import Logo from "./components/Logo/Logo";
 import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import Rank from "./components/Rank/Rank";
 
@@ -127,7 +124,6 @@ class App extends Component {
           {route === "home" ? (
             <React.Fragment>
               <div>
-                {/* <Logo /> */}
                 <Rank
                   name={this.state.user.name}
                   entries={this.state.user.entries}
