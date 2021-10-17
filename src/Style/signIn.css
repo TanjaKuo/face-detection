@@ -122,4 +122,10 @@
             transform: rotate(360deg);
   }
 }
+
+.show-message {
+  margin-bottom: -2.1rem;
+  width: 195px;
+  font-weight: 600;
+}
 /*# sourceMappingURL=signIn.css.map */

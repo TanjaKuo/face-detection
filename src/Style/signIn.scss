@@ -46,3 +46,7 @@
 .sign-in-btn-active {
   @include btn-active;
 }
+
+.show-message {
+  @include show-messages;
+}

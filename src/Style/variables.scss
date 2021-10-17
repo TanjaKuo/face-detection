@@ -104,3 +104,9 @@ $fontFamily: "Festive", cursive;
     }
   }
 }
+
+@mixin show-messages {
+  margin-bottom: -2.1rem;
+  width: 195px;
+  font-weight: 600;
+}

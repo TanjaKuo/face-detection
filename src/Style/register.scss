@@ -54,6 +54,5 @@
 }
 
 .show-message {
-  margin-bottom: -2.1rem;
-  width: 195px;
+  @include show-messages;
 }

@@ -8,6 +8,8 @@ class Signin extends React.Component {
       signInEmail: "",
       signInPassword: "",
       before: true,
+      showMessage: false,
+      text: "",
     };
   }
   onEmailChange = (event) => {
@@ -15,10 +17,18 @@ class Signin extends React.Component {
   };
 
   onPasswordChange = (event) => {
-    this.setState({ signInPassword: event.target.value });
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
   };
 
   onSubmitSignIn = () => {
+    /* const { signInEmail, signInPassword } = this.state;
+    if (!signInEmail || signInPassword) {
+      this.setState({
+        text: "Opps, something is missing",
+      });
+      return;
+    } */
     fetch("https://floating-citadel-01605.herokuapp.com/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" }, // because -, so using {} to cover
@@ -32,6 +42,11 @@ class Signin extends React.Component {
         if (user.id) {
           this.props.onRouteChange("home");
           this.props.loadUser(user);
+        } else {
+          this.setState({
+            showMessage: !this.state.showMessage,
+            before: true,
+          });
         }
       });
     this.setState({ before: !this.state.before });
@@ -41,6 +56,7 @@ class Signin extends React.Component {
     let sign_in_btn = this.state.before ? "sign-in-btn" : "sign-in-btn-active";
 
     const { onRouteChange } = this.props;
+    const { signInEmail, signInPassword, text } = this.state;
     return (
       <article className="card-container">
         <main className="card">
@@ -54,9 +70,11 @@ class Signin extends React.Component {
                 <input
                   className="input"
                   type="email"
-                  name="email-address"
+                  name="signInEmail"
+                  value={signInEmail}
                   id="email-address"
                   onChange={this.onEmailChange}
+                  required
                 />
               </div>
               <div className="input-field">
@@ -66,12 +84,17 @@ class Signin extends React.Component {
                 <input
                   className="input"
                   type="password"
-                  name="password"
+                  name="signInPassword"
+                  value={signInPassword}
                   id="password"
                   onChange={this.onPasswordChange}
+                  required
                 />
               </div>
             </fieldset>
+            {this.state.showMessage && (
+              <p className="show-message">{text}Please try again!</p>
+            )}
             <div className="sign-in">
               <input
                 onClick={this.onSubmitSignIn}
