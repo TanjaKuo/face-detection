@@ -46,11 +46,14 @@
 .register-btn {
   @include btn;
   padding: 2.3rem 1rem;
-  animation: spinner4 800ms linear infinite;
-  @keyframes spinner4 {
-    to {
-      transform: scale(1.5);
-      opacity: 0;
-    }
-  }
+}
+
+.register-btn-active {
+  @include btn-active;
+  padding: 2.3rem 1rem;
+}
+
+.show-message {
+  margin-bottom: -2.1rem;
+  width: 195px;
 }

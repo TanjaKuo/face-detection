@@ -78,24 +78,6 @@
   margin-left: 2.7rem;
   margin-right: 2.5rem;
   margin-top: 3rem;
-  -webkit-animation: spinner4 800ms linear infinite;
-          animation: spinner4 800ms linear infinite;
-}
-
-@-webkit-keyframes spinner4 {
-  to {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    opacity: 0;
-  }
-}
-
-@keyframes spinner4 {
-  to {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    opacity: 0;
-  }
 }
 
 .sign-in-btn {
@@ -111,5 +93,33 @@
 .sign-in-btn:hover {
   background-color: black;
   color: white;
+}
+
+.sign-in-btn-active {
+  background-color: white;
+  border-radius: 50%;
+  padding: 2rem 1rem;
+  cursor: pointer;
+  font-size: large;
+  color: #333333;
+  height: auto;
+  border: 2px solid black;
+  border-top-color: #fff;
+  -webkit-animation: spinner2 1s linear infinite;
+          animation: spinner2 1s linear infinite;
+}
+
+@-webkit-keyframes spinner2 {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner2 {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=signIn.css.map */

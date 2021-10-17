@@ -7,7 +7,10 @@ class Register extends React.Component {
     this.state = {
       email: "",
       password: "",
+      confirmPassword: "",
       name: "",
+      before: true,
+      showMessage: false,
     };
   }
 
@@ -20,10 +23,18 @@ class Register extends React.Component {
   };
 
   onPasswordChange = (event) => {
-    this.setState({ password: event.target.value });
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
   };
 
   onSubmitSignIn = () => {
+    const { password, confirmPassword } = this.state;
+    if (password !== confirmPassword) {
+      this.setState({
+        showMessage: !this.state.showMessage,
+      });
+      return;
+    }
     fetch("https://floating-citadel-01605.herokuapp.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
@@ -40,9 +51,14 @@ class Register extends React.Component {
           this.props.onRouteChange("home");
         }
       });
+    this.setState({ before: !this.state.before });
   };
 
   render() {
+    let register_btn = this.state.before
+      ? "register-btn"
+      : "register-btn-active";
+    const { password, confirmPassword } = this.state;
     return (
       <article className="register-card-container ">
         <main className="register-card">
@@ -79,17 +95,34 @@ class Register extends React.Component {
                 </label>
                 <input
                   className="register-input"
+                  value={password}
                   type="password"
                   name="password"
                   id="password"
                   onChange={this.onPasswordChange}
                 />
               </div>
+              <div className="register-input-field">
+                <label className="register-input-label" htmlFor="password">
+                  Confirm Password
+                </label>
+                <input
+                  className="register-input"
+                  value={confirmPassword}
+                  type="password"
+                  name="confirmPassword"
+                  id="confirmPassword"
+                  onChange={this.onPasswordChange}
+                />
+              </div>
             </fieldset>
+            {this.state.showMessage && (
+              <p className="show-message">Passwords don't macth!</p>
+            )}
             <div className="register">
               <input
                 onClick={this.onSubmitSignIn}
-                className="register-btn"
+                className={register_btn}
                 type="submit"
                 value="Register"
               />

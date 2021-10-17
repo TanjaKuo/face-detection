@@ -86,3 +86,21 @@ $fontFamily: "Festive", cursive;
     color: $secondColor;
   }
 }
+
+@mixin btn-active {
+  background-color: white;
+  border-radius: 50%;
+  padding: 2rem 1rem;
+  cursor: pointer;
+  font-size: large;
+  color: $fontColor;
+  height: auto;
+  border: 2px solid black;
+  border-top-color: #fff;
+  animation: spinner2 1s linear infinite;
+  @keyframes spinner2 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

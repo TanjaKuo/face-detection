@@ -7,6 +7,7 @@ class Signin extends React.Component {
     this.state = {
       signInEmail: "",
       signInPassword: "",
+      before: true,
     };
   }
   onEmailChange = (event) => {
@@ -33,9 +34,12 @@ class Signin extends React.Component {
           this.props.loadUser(user);
         }
       });
+    this.setState({ before: !this.state.before });
   };
 
   render() {
+    let sign_in_btn = this.state.before ? "sign-in-btn" : "sign-in-btn-active";
+
     const { onRouteChange } = this.props;
     return (
       <article className="card-container">
@@ -71,12 +75,12 @@ class Signin extends React.Component {
             <div className="sign-in">
               <input
                 onClick={this.onSubmitSignIn}
-                className="sign-in-btn"
+                className={sign_in_btn}
                 type="submit"
                 value="Sign in"
               />
             </div>
-            {/*          <div className="lh-copy mt3">
+            {/* <div className="lh-copy mt3">
               <p
                 onClick={() => onRouteChange("register")}
                 className="f6 link dim black db pointer"
